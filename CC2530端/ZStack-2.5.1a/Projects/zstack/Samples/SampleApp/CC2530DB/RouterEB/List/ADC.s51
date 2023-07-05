@@ -1,0 +1,406 @@
+///////////////////////////////////////////////////////////////////////////////
+//                                                                            /
+// IAR C/C++ Compiler V8.10.3.10338/W32 for 8051        06/Jun/2023  20:55:49 /
+// Copyright 2004-2011 IAR Systems AB.                                        /
+//                                                                            /
+//    Core               =  plain                                             /
+//    Code model         =  banked                                            /
+//    Data model         =  large                                             /
+//    Calling convention =  xdata reentrant                                   /
+//    Constant location  =  data_rom                                          /
+//    Dptr setup         =  1,16                                              /
+//    Source file        =  C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\Source\ADC.c           /
+//    Command line       =  -f C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Proj /
+//                          ects\zstack\Samples\SampleApp\CC2530DB\..\..\..\T /
+//                          ools\CC2530DB\f8wRouter.cfg (-DCPU32MHZ           /
+//                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TR /
+//                          UE -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8     /
+//                          -DMAC_CFG_RX_MAX=5 -DRTR_NWK) -f                  /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\Tool /
+//                          s\CC2530DB\f8wConfig.cfg (-DZIGBEEPRO -DSECURE=0  /
+//                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                 /
+//                          -DDEFAULT_CHANLIST=0x00000800                     /
+//                          -DZDAPP_CONFIG_PAN_ID=0xFFF1                      /
+//                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_M /
+//                          ASK=0x007F -DBEACON_REQUEST_DELAY=100             /
+//                          -DBEACON_REQ_DELAY_MASK=0x00FF                    /
+//                          -DLINK_STATUS_JITTER_MASK=0x007F                  /
+//                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_P /
+//                          OLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7           /
+//                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3   /
+//                          -DNWK_MAX_DATA_RETRIES=2                          /
+//                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9        /
+//                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40          /
+//                          -DNWK_MAX_BINDING_ENTRIES=4                       /
+//                          -DMAX_BINDING_CLUSTER_IDS=4                       /
+//                          "-DDEFAULT_KEY={0x01, 0x03, 0x05, 0x07, 0x09,     /
+//                          0x0B, 0x0D, 0x0F, 0x00, 0x02, 0x04, 0x06, 0x08,   /
+//                          0x0A, 0x0C, 0x0D}" -DMAC_MAX_FRAME_SIZE=116       /
+//                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const    /
+//                          __code" -DGENERIC=__generic                       /
+//                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000       /
+//                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)  /
+//                          -DREJOIN_POLL_RATE=440 C:\Users\¿Ÿ—≈\Desktop\stm3 /
+//                          2\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp /
+//                          \Source\ADC.c -D ZTOOL_P1 -D xMT_TASK -D          /
+//                          xMT_SYS_FUNC -D xMT_ZDO_FUNC -D                   /
+//                          LCD_SUPPORTED=DEBUG -lC                           /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\RouterEB\List /
+//                          \ -lA C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\P /
+//                          rojects\zstack\Samples\SampleApp\CC2530DB\RouterE /
+//                          B\List\ --diag_suppress Pe001,Pa010 -o            /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\RouterEB\Obj\ /
+//                           -e --no_code_motion --debug --core=plain         /
+//                          --dptr=16,1 --data_model=large                    /
+//                          --code_model=banked --calling_convention=xdata_re /
+//                          entrant --place_constants=data_rom                /
+//                          --nr_virtual_regs 16 -I                           /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\ -I           /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\Source\    /
+//                          -I C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Proj /
+//                          ects\zstack\Samples\SampleApp\CC2530DB\..\..\..\Z /
+//                          Main\TI2530DB\ -I C:\Users\¿Ÿ—≈\Desktop\stm32\ZSt /
+//                          ack-2.5.1a\Projects\zstack\Samples\SampleApp\CC25 /
+//                          30DB\..\..\..\..\..\Components\hal\include\ -I    /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\hal\target\CC2530EB\ -I              /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\mac\include\ -I                      /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\mac\high_level\ -I                   /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\mac\low_level\srf04\ -I              /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\mac\low_level\srf04\single_chip\ -I  /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\mt\ -I C:\Users\¿Ÿ—≈\Desktop\stm32\Z /
+//                          Stack-2.5.1a\Projects\zstack\Samples\SampleApp\CC /
+//                          2530DB\..\..\..\..\..\Components\osal\include\    /
+//                          -I C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Proj /
+//                          ects\zstack\Samples\SampleApp\CC2530DB\..\..\..\. /
+//                          .\..\Components\services\saddr\ -I                /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\services\sdata\ -I                   /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\stack\af\ -I                         /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\stack\nwk\ -I                        /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\stack\sapi\ -I                       /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\stack\sec\ -I                        /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\stack\sys\ -I                        /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\stack\zdo\ -I                        /
+//                          C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\..\..\..\..\. /
+//                          .\Components\zmac\ -I C:\Users\¿Ÿ—≈\Desktop\stm32 /
+//                          \ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\ /
+//                          CC2530DB\..\..\..\..\..\Components\zmac\f8w\ -Ohz /
+//    List file          =  C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Project /
+//                          s\zstack\Samples\SampleApp\CC2530DB\RouterEB\List /
+//                          \ADC.s51                                          /
+//                                                                            /
+//                                                                            /
+///////////////////////////////////////////////////////////////////////////////
+
+        NAME ADC
+
+        RTMODEL "__SystemLibrary", "CLib"
+        RTMODEL "__calling_convention", "xdata_reentrant"
+        RTMODEL "__code_model", "banked"
+        RTMODEL "__core", "plain"
+        RTMODEL "__data_model", "large"
+        RTMODEL "__dptr_size", "16"
+        RTMODEL "__extended_stack", "disabled"
+        RTMODEL "__location_for_constants", "data"
+        RTMODEL "__number_of_dptrs", "1"
+        RTMODEL "__rt_version", "1"
+
+        RSEG DOVERLAY:DATA:NOROOT(0)
+        RSEG IOVERLAY:IDATA:NOROOT(0)
+        RSEG ISTACK:IDATA:NOROOT(0)
+        RSEG PSTACK:XDATA:NOROOT(0)
+        RSEG XSTACK:XDATA:NOROOT(0)
+
+        EXTERN ?BDISPATCH
+        EXTERN ?BRET
+
+        PUBLIC ??Get_ADC?relay
+        FUNCTION ??Get_ADC?relay,0203H
+        PUBLIC ??Init_ADC0?relay
+        FUNCTION ??Init_ADC0?relay,0203H
+        PUBWEAK ADCCON3
+        PUBWEAK ADCH
+        PUBWEAK ADCL
+        PUBWEAK APCFG
+        PUBLIC Get_ADC
+        FUNCTION Get_ADC,0203H
+        ARGFRAME XSTACK, 0, STACK
+        LOCFRAME ISTACK, 2, STACK
+        PUBLIC Init_ADC0
+        FUNCTION Init_ADC0,0203H
+        ARGFRAME XSTACK, 0, STACK
+        PUBWEAK P0DIR
+        PUBWEAK P0SEL
+        PUBWEAK _A_TCON
+        
+        CFI Names cfiNames0
+        CFI StackFrame CFA_SP SP IDATA
+        CFI StackFrame CFA_PSP16 PSP16 XDATA
+        CFI StackFrame CFA_XSP16 XSP16 XDATA
+        CFI StaticOverlayFrame CFA_IOVERLAY IOVERLAY
+        CFI StaticOverlayFrame CFA_DOVERLAY DOVERLAY
+        CFI Resource `PSW.CY`:1, `B.BR0`:1, `B.BR1`:1, `B.BR2`:1, `B.BR3`:1
+        CFI Resource `B.BR4`:1, `B.BR5`:1, `B.BR6`:1, `B.BR7`:1, `VB.BR8`:1
+        CFI Resource `VB.BR9`:1, `VB.BR10`:1, `VB.BR11`:1, `VB.BR12`:1
+        CFI Resource `VB.BR13`:1, `VB.BR14`:1, `VB.BR15`:1, VB:8, B:8, A:8
+        CFI Resource PSW:8, DPL0:8, DPH0:8, R0:8, R1:8, R2:8, R3:8, R4:8, R5:8
+        CFI Resource R6:8, R7:8, V0:8, V1:8, V2:8, V3:8, V4:8, V5:8, V6:8, V7:8
+        CFI Resource V8:8, V9:8, V10:8, V11:8, V12:8, V13:8, V14:8, V15:8, SP:8
+        CFI Resource PSPH:8, PSPL:8, PSP16:16, XSPH:8, XSPL:8, XSP16:16
+        CFI VirtualResource ?RET:24
+        CFI Resource ?BRET_EXT:8
+        CFI VirtualResource ?RET_HIGH:8, ?RET_LOW:8
+        CFI ResourceParts PSP16 PSPH, PSPL
+        CFI ResourceParts XSP16 XSPH, XSPL
+        CFI ResourceParts ?RET ?BRET_EXT, ?RET_HIGH, ?RET_LOW
+        CFI EndNames cfiNames0
+        
+        CFI Common cfiCommon0 Using cfiNames0
+        CFI CodeAlign 1
+        CFI DataAlign -1
+        CFI ReturnAddress ?RET CODE
+        CFI CFA_DOVERLAY Used
+        CFI CFA_IOVERLAY Used
+        CFI CFA_SP SP+-3
+        CFI CFA_PSP16 PSP16+0
+        CFI CFA_XSP16 XSP16+0
+        CFI `PSW.CY` SameValue
+        CFI `B.BR0` SameValue
+        CFI `B.BR1` SameValue
+        CFI `B.BR2` SameValue
+        CFI `B.BR3` SameValue
+        CFI `B.BR4` SameValue
+        CFI `B.BR5` SameValue
+        CFI `B.BR6` SameValue
+        CFI `B.BR7` SameValue
+        CFI `VB.BR8` SameValue
+        CFI `VB.BR9` SameValue
+        CFI `VB.BR10` SameValue
+        CFI `VB.BR11` SameValue
+        CFI `VB.BR12` SameValue
+        CFI `VB.BR13` SameValue
+        CFI `VB.BR14` SameValue
+        CFI `VB.BR15` SameValue
+        CFI VB SameValue
+        CFI B Undefined
+        CFI A Undefined
+        CFI PSW SameValue
+        CFI DPL0 SameValue
+        CFI DPH0 SameValue
+        CFI R0 Undefined
+        CFI R1 Undefined
+        CFI R2 Undefined
+        CFI R3 Undefined
+        CFI R4 Undefined
+        CFI R5 Undefined
+        CFI R6 SameValue
+        CFI R7 SameValue
+        CFI V0 SameValue
+        CFI V1 SameValue
+        CFI V2 SameValue
+        CFI V3 SameValue
+        CFI V4 SameValue
+        CFI V5 SameValue
+        CFI V6 SameValue
+        CFI V7 SameValue
+        CFI V8 SameValue
+        CFI V9 SameValue
+        CFI V10 SameValue
+        CFI V11 SameValue
+        CFI V12 SameValue
+        CFI V13 SameValue
+        CFI V14 SameValue
+        CFI V15 SameValue
+        CFI PSPH Undefined
+        CFI PSPL Undefined
+        CFI XSPH Undefined
+        CFI XSPL Undefined
+        CFI ?RET Concat
+        CFI ?BRET_EXT Frame(CFA_SP, 3)
+        CFI ?RET_HIGH Frame(CFA_SP, 2)
+        CFI ?RET_LOW Frame(CFA_SP, 1)
+        CFI EndCommon cfiCommon0
+        
+Get_ADC             SYMBOL "Get_ADC"
+??Get_ADC?relay     SYMBOL "?relay", Get_ADC
+Init_ADC0           SYMBOL "Init_ADC0"
+??Init_ADC0?relay   SYMBOL "?relay", Init_ADC0
+
+// C:\Users\¿Ÿ—≈\Desktop\stm32\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\Source\ADC.c
+//    1 #include "ADC.h"
+
+        ASEGN SFR_AN:DATA:NOROOT,088H
+// union <unnamed> volatile __sfr _A_TCON
+_A_TCON:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0b6H
+// unsigned char volatile __sfr ADCCON3
+ADCCON3:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0baH
+// unsigned char volatile __sfr ADCL
+ADCL:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0bbH
+// unsigned char volatile __sfr ADCH
+ADCH:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0f2H
+// unsigned char volatile __sfr APCFG
+APCFG:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0f3H
+// unsigned char volatile __sfr P0SEL
+P0SEL:
+        DATA8
+        DS 1
+
+        ASEGN SFR_AN:DATA:NOROOT,0fdH
+// unsigned char volatile __sfr P0DIR
+P0DIR:
+        DATA8
+        DS 1
+//    2 
+
+        RSEG BANKED_CODE:CODE:NOROOT(0)
+//    3 void Init_ADC0(void)
+Init_ADC0:
+        CFI Block cfiBlock0 Using cfiCommon0
+        CFI Function Init_ADC0
+        CODE
+//    4 {
+        ; Saved register size: 0
+        ; Auto size: 0
+//    5     P0SEL  |= 0x01; 
+        ORL     0xf3,#0x1
+//    6     P0DIR  &= ~0x01; 
+        ANL     0xfd,#0xfe
+//    7     APCFG  |= 0x01;        //p0_0‘ –Ì π”√ƒ£ƒ‚IO
+        ORL     0xf2,#0x1
+//    8 }
+        LJMP    ?BRET
+        CFI EndBlock cfiBlock0
+        REQUIRE P0SEL
+        REQUIRE P0DIR
+        REQUIRE APCFG
+//    9 
+
+        RSEG BANKED_CODE:CODE:NOROOT(0)
+//   10 uint16 Get_ADC(void)
+Get_ADC:
+        CFI Block cfiBlock1 Using cfiCommon0
+        CFI Function Get_ADC
+        CODE
+//   11 {
+        ; Saved register size: 2
+        ; Auto size: 0
+//   12     uint16 value;
+//   13 
+//   14     ADCIF = 0;            //«ÂADC ÷–∂œ±Í÷æ,≤…”√ª˘◊ºµÁ—πavdd5:3.3V£¨Õ®µ¿0£¨∆Ù∂ØAD◊™ªØ
+        CLR     0x88.5
+//   15 
+//   16     ADCCON3 = (0x80 | 0x10 | 0x00);
+        MOV     0xb6,#-0x70
+//   17 
+//   18     while ( !ADCIF )
+??Get_ADC_0:
+        MOV     C,0x88.5
+        JNC     ??Get_ADC_0
+//   19     {
+//   20 		
+//   21       ;  //µ»¥˝AD◊™ªØΩ· ¯
+//   22 	
+//   23     }
+//   24 
+//   25     value = ADCH;
+        MOV     A,0xbb
+//   26 
+//   27     value = value<< 8;
+//   28 
+//   29     value |= ADCL;              // AD÷µ◊™ªØ≥…µÁ—π÷µ,0 ±Ì æ 0V £¨32768 ±Ì æ 3.3V
+//   30 	
+//   31 //    value = (value * 330);      //µÁ—π÷µ = (value*3.3)/32768 £®V)
+//   32 //
+//   33 //    value = value >> 15;        // ≥˝“‘32768
+//   34 	
+//   35     return value;       // ∑µªÿ∑÷±Ê¬ Œ™0.01VµƒµÁ—π÷µ
+        MOV     R1,A
+        MOV     A,0xba
+        MOV     R2,A
+        MOV     A,R1
+        MOV     R3,A
+        LJMP    ?BRET
+        CFI EndBlock cfiBlock1
+        REQUIRE _A_TCON
+        REQUIRE ADCCON3
+        REQUIRE ADCH
+        REQUIRE ADCL
+//   36 	
+//   37 
+//   38 }
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+??Init_ADC0?relay:
+        LCALL   ?BDISPATCH
+        DATA
+        DC24    Init_ADC0
+
+        RSEG BANK_RELAYS:CODE:REORDER:NOROOT(0)
+??Get_ADC?relay:
+        LCALL   ?BDISPATCH
+        DATA
+        DC24    Get_ADC
+
+        END
+// 
+// 32 bytes in segment BANKED_CODE
+// 12 bytes in segment BANK_RELAYS
+//  7 bytes in segment SFR_AN
+// 
+// 44 bytes of CODE memory
+//  0 bytes of DATA memory (+ 7 bytes shared)
+//
+//Errors: none
+//Warnings: none

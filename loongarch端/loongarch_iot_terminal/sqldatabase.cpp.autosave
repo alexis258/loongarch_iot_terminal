@@ -1,0 +1,45 @@
+#include "sqldatabase.h"
+
+void CreateDatabaseFunc()   //创建数据库
+{
+    //1.添加数据库驱动
+    sqldb = QSqlDatabase::addDatabase("QSQLITE");   //选择sqlite数据库驱动
+
+    //2.设置数据库名称
+    sqldb.setDatabaseName("loongarch_iot.db");     //数据库名称为loongarch_iot.db
+
+    //3.打开此数据库是否成功
+    if(sqldb.open()==true)
+    {
+        QMessageBox::information(0,"true","database connection succeeded",QMessageBox::Ok);
+    }
+    else
+    {
+        QMessageBox::critical(0,"false","database connection failed",QMessageBox::Ok);
+    }
+}
+
+void CreateTableFunc()  //创建数据表
+{
+    QSqlQuery createquery;
+
+    //创建sql语句
+    QString strsql = QString("create table node1data("
+                             "id int primary key not null,"
+                             "date date not null,"
+                             "score real not null)");
+
+    //执行sql语句
+    if(createquery.exec(strsql)==true)
+    {
+        QMessageBox::information(0,"true","datatable creation succeeded",QMessageBox::Ok);
+    }
+    else
+    {
+        QMessageBox::critical(0,"false","datatable creation failed",QMessageBox::Ok);
+    }
+}
+void StudentDia::QueryTableFunc()
+{
+
+}//执行查询操作

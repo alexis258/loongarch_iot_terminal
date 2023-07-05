@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>background.jpg</file>
+        <file>but1.png</file>
+        <file>but2.png</file>
+        <file>but3.png</file>
+        <file>but4.png</file>
+        <file>but5.png</file>
+        <file>but6.png</file>
+        <file>back.png</file>
+        <file>subscribe.png</file>
+        <file>coor.png</file>
+        <file>end.png</file>
+        <file>wifi.png</file>
+        <file>wifi-off.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,11 @@
+debug/basealarm.o
+debug/basechart.o
+debug/basetable.o
+debug/exportapi.o
+debug/main.o
+debug/mainwindow.o
+debug/basedb.o
+debug/sensordata.o
+debug/sensordb.o
+debug/qrc_picture.o
+debug/moc_mainwindow.o

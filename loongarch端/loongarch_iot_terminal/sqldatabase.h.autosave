@@ -1,0 +1,23 @@
+//数据库驱动文件
+
+#ifndef SQLDATABASE_H
+#define SQLDATABASE_H
+
+#include <QSqlDatabase>         //数据库
+#include <QSqlQuery>            //数据库查询语句类
+#include <QSqlError>            
+#include <QSqlQueryModel>
+
+#include <QMessageBox>      //消息窗口
+
+void CreateDatabaseFunc();      //创建数据库
+void CreateTableFunc();         //创建数据表
+void QueryTableFunc();          //执行查询语句
+
+//建立数据库对象
+QSqlDatabase sqldb;             //创建数据库
+QSqlQueryModel sqlmodel;        //存储结果集
+
+
+
+#endif // SQLDATABASE_H

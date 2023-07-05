@@ -1,0 +1,1135 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.3.10338/W32 for 8051         05/May/2023  21:22:17 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\Source\B_LUX_V30.c       #
+#    Command line       =  -f C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Proje #
+#                          cts\zstack\Samples\SampleApp\CC2530DB\..\..\..\Too #
+#                          ls\CC2530DB\f8wEndev.cfg (-DCPU32MHZ               #
+#                          -DROOT=__near_func -DMAC_CFG_TX_DATA_MAX=3         #
+#                          -DMAC_CFG_TX_MAX=6 -DMAC_CFG_RX_MAX=3) -f          #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\Tools\ #
+#                          CC2530DB\f8wConfig.cfg (-DZIGBEEPRO -DSECURE=0     #
+#                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
+#                          -DDEFAULT_CHANLIST=0x00000800                      #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFF1                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 C:\Users\蕾雅\Desktop\stm32 #
+#                          \ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\S #
+#                          ource\B_LUX_V30.c -D NWK_AUTO_POLL -D ZTOOL_P1 -D  #
+#                          MT_TASK -D MT_SYS_FUNC -D MT_ZDO_FUNC -D           #
+#                          LCD_SUPPORTED=DEBUG -lC C:\Users\蕾雅\Desktop\stm3 #
+#                          2\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\ #
+#                          CC2530DB\EndDeviceEB\List\ -lA                     #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\EndDeviceEB\Lis #
+#                          t\ --diag_suppress Pe001,Pa010 -o                  #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\EndDeviceEB\Obj #
+#                          \ -e --no_code_motion --debug --core=plain         #
+#                          --dptr=16,1 --data_model=large                     #
+#                          --code_model=banked --calling_convention=xdata_ree #
+#                          ntrant --place_constants=data_rom                  #
+#                          --nr_virtual_regs 16 -I C:\Users\蕾雅\Desktop\stm3 #
+#                          2\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\ #
+#                          CC2530DB\ -I C:\Users\蕾雅\Desktop\stm32\ZStack-2. #
+#                          5.1a\Projects\zstack\Samples\SampleApp\CC2530DB\.. #
+#                          \Source\ -I C:\Users\蕾雅\Desktop\stm32\ZStack-2.5 #
+#                          .1a\Projects\zstack\Samples\SampleApp\CC2530DB\..\ #
+#                          ..\..\ZMain\TI2530DB\ -I                           #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\hal\include\ -I                         #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\hal\target\CC2530EB\ -I                 #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\mac\include\ -I                         #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\mac\high_level\ -I                      #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\mac\low_level\srf04\ -I                 #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\mac\low_level\srf04\single_chip\ -I     #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\mt\ -I C:\Users\蕾雅\Desktop\stm32\ZSta #
+#                          ck-2.5.1a\Projects\zstack\Samples\SampleApp\CC2530 #
+#                          DB\..\..\..\..\..\Components\osal\include\ -I      #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\services\saddr\ -I                      #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\services\sdata\ -I                      #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\stack\af\ -I C:\Users\蕾雅\Desktop\stm3 #
+#                          2\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\ #
+#                          CC2530DB\..\..\..\..\..\Components\stack\nwk\ -I   #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\stack\sapi\ -I                          #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\stack\sec\ -I                           #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\stack\sys\ -I                           #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\stack\zdo\ -I                           #
+#                          C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\..\..\..\..\..\ #
+#                          Components\zmac\ -I C:\Users\蕾雅\Desktop\stm32\ZS #
+#                          tack-2.5.1a\Projects\zstack\Samples\SampleApp\CC25 #
+#                          30DB\..\..\..\..\..\Components\zmac\f8w\ -Ohz      #
+#    List file          =  C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\EndDeviceEB\Lis #
+#                          t\B_LUX_V30.lst                                    #
+#    Object file        =  C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects #
+#                          \zstack\Samples\SampleApp\CC2530DB\EndDeviceEB\Obj #
+#                          \B_LUX_V30.r51                                     #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\蕾雅\Desktop\stm32\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\Source\B_LUX_V30.c
+      1          //***************************************
+      2          // B_LUX30_V30采集程序
+      3          //****************************************
+      4          
+      5          #include "B_LUX_V30.h"
+
+   \                                 In  segment SFR_AN, at 0x90
+   \   union <unnamed> volatile __sfr _A_P1
+   \                     _A_P1:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xf4
+   \   unsigned char volatile __sfr P1SEL
+   \                     P1SEL:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xfe
+   \   unsigned char volatile __sfr P1DIR
+   \                     P1DIR:
+   \   000000                DS 1
+      6          
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+      7          uint8    m_BUF[129];                       //接收数据缓存区      	
+   \                     m_BUF:
+   \   000000                DS 129
+   \   000081                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+      8          uint32   m_lightlux;                       //变量
+   \                     m_lightlux:
+   \   000000                DS 4
+   \   000004                REQUIRE __INIT_XDATA_Z
+      9          
+     10          
+     11          /*---------------------------------------------------------------------
+     12           功能描述: 延时纳秒 不同的工作环境,需要调整此函数
+     13           参数说明: 无	
+     14           函数返回: 无
+     15           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     16          void B_LUX30_delay_nms(uint16 k)	
+   \                     B_LUX30_delay_nms:
+     17          {						
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+     18            uint16 i,j;				
+     19            for(i=0;i<k;i++)
+   \   000000   7800         MOV     R0,#0x0
+   \   000002   7900         MOV     R1,#0x0
+   \   000004   8008         SJMP    ??B_LUX30_delay_nms_0
+     20            {			
+     21              for(j=0;j<6000;j++)			
+   \                     ??B_LUX30_delay_nms_1:
+   \   000006   E8           MOV     A,R0
+   \   000007   2401         ADD     A,#0x1
+   \   000009   08           INC     R0
+   \   00000A   E9           MOV     A,R1
+   \   00000B   3400         ADDC    A,#0x0
+   \   00000D   F9           MOV     R1,A
+   \                     ??B_LUX30_delay_nms_0:
+   \   00000E   C3           CLR     C
+   \   00000F   E8           MOV     A,R0
+   \   000010   9A           SUBB    A,R2
+   \   000011   E9           MOV     A,R1
+   \   000012   9B           SUBB    A,R3
+   \   000013   40F1         JC      ??B_LUX30_delay_nms_1
+     22              {
+     23                ;
+     24              }
+     25            }						
+     26          }					
+   \   000015   02....       LJMP    ?BRET
+     27          
+     28          /*---------------------------------------------------------------------
+     29           功能描述: 延时5微秒  不同的工作环境,需要调整此函数
+     30           参数说明: 无	
+     31           函数返回: 无
+     32           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     33          void B_LUX30_Delay5us()
+   \                     B_LUX30_Delay5us:
+     34          {
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+     35            uint16 n = 50;
+   \   000000   7832         MOV     R0,#0x32
+   \   000002   7900         MOV     R1,#0x0
+     36            
+     37            while (n--);
+   \                     ??B_LUX30_Delay5us_0:
+   \   000004   12....       LCALL   ?Subroutine5 & 0xFFFF
+   \                     ??CrossCallReturnLabel_4:
+   \   000007   70FB         JNZ     ??B_LUX30_Delay5us_0
+     38          }
+   \   000009   02....       LJMP    ?BRET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine5:
+   \   000000   E8           MOV     A,R0
+   \   000001   FA           MOV     R2,A
+   \   000002   E9           MOV     A,R1
+   \   000003   FB           MOV     R3,A
+   \   000004   EA           MOV     A,R2
+   \   000005   24FF         ADD     A,#-0x1
+   \   000007   18           DEC     R0
+   \   000008   EB           MOV     A,R3
+   \   000009   34FF         ADDC    A,#-0x1
+   \   00000B   F9           MOV     R1,A
+   \   00000C   EA           MOV     A,R2
+   \   00000D   4B           ORL     A,R3
+   \   00000E   22           RET
+     39          
+     40          /*---------------------------------------------------------------------
+     41           功能描述: 延时5毫秒  不同的工作环境,需要调整此函数
+     42           参数说明: 无	
+     43           函数返回: 无
+     44           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     45          void B_LUX30_Delay5ms()
+   \                     B_LUX30_Delay5ms:
+     46          {
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+     47            uint16 n = 50000;
+   \   000000   7850         MOV     R0,#0x50
+   \   000002   79C3         MOV     R1,#-0x3d
+     48            
+     49            while (n--);
+   \                     ??B_LUX30_Delay5ms_0:
+   \   000004   12....       LCALL   ?Subroutine5 & 0xFFFF
+   \                     ??CrossCallReturnLabel_5:
+   \   000007   70FB         JNZ     ??B_LUX30_Delay5ms_0
+     50          }
+   \   000009   02....       LJMP    ?BRET
+     51          
+     52          /*---------------------------------------------------------------------
+     53           功能描述: 起始信号
+     54           参数说明: 无	
+     55           函数返回: 无
+     56           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     57          void B_LUX30_Start()
+   \                     B_LUX30_Start:
+     58          {
+   \   000000   C082         PUSH    DPL
+   \   000002   C083         PUSH    DPH
+   \   000004                ; Saved register size: 2
+   \   000004                ; Auto size: 0
+     59            B_LUX30_SDA0_H;                         //拉高数据线
+   \   000004   D293         SETB    0x90.3
+     60            B_LUX30_SCL0_H;                         //拉高时钟线
+   \   000006   D292         SETB    0x90.2
+     61            B_LUX30_Delay5us();                     //延时
+   \   000008                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   000008   12....       LCALL   ??B_LUX30_Delay5us?relay
+     62            B_LUX30_SDA0_L;                         //产生下降沿
+   \   00000B   C293         CLR     0x90.3
+     63            B_LUX30_Delay5us();                     //延时
+   \   00000D                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   00000D   12....       LCALL   ?Subroutine8 & 0xFFFF
+     64            B_LUX30_SCL0_L;                         //拉低时钟线
+     65          }
+   \                     ??CrossCallReturnLabel_10:
+   \   000010                REQUIRE ?Subroutine0
+   \   000010                REQUIRE _A_P1
+   \   000010                ; // Fall through to label ?Subroutine0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine0:
+   \   000000   D083         POP     DPH
+   \   000002   D082         POP     DPL
+   \   000004   02....       LJMP    ?BRET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine8:
+   \   000000   12....       LCALL   ??B_LUX30_Delay5us?relay
+   \   000003   C292         CLR     0x90.2
+   \   000005   22           RET
+     66          
+     67          /*---------------------------------------------------------------------
+     68           功能描述: 停止信号
+     69           参数说明: 无	
+     70           函数返回: 无
+     71           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     72          void B_LUX30_Stop()
+   \                     B_LUX30_Stop:
+     73          {
+   \   000000   C082         PUSH    DPL
+   \   000002   C083         PUSH    DPH
+   \   000004                ; Saved register size: 2
+   \   000004                ; Auto size: 0
+     74            B_LUX30_SDA0_L;                         //拉低数据线
+   \   000004   C293         CLR     0x90.3
+     75            B_LUX30_SCL0_H;                         //拉高时钟线
+   \   000006   D292         SETB    0x90.2
+     76            B_LUX30_Delay5us();                     //延时
+   \   000008                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   000008   12....       LCALL   ??B_LUX30_Delay5us?relay
+     77            B_LUX30_SDA0_H;                         //产生上升沿
+   \   00000B   D293         SETB    0x90.3
+     78            B_LUX30_Delay5us();                     //延时
+   \   00000D                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   00000D   12....       LCALL   ?Subroutine6 & 0xFFFF
+     79            B_LUX30_SCL0_L;
+     80            B_LUX30_Delay5us();
+     81            
+     82            B_LUX30_delay_nms(1000);                         //延时180ms
+   \                     ??CrossCallReturnLabel_6:
+   \   000010                ; Setup parameters for call to function B_LUX30_delay_nms
+   \   000010   7AE8         MOV     R2,#-0x18
+   \   000012   7B03         MOV     R3,#0x3
+   \   000014   12....       LCALL   ??B_LUX30_delay_nms?relay
+     83          }
+   \   000017   80..         SJMP    ?Subroutine0
+   \   000019                REQUIRE _A_P1
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine6:
+   \   000000   12....       LCALL   ?Subroutine8 & 0xFFFF
+   \                     ??CrossCallReturnLabel_13:
+   \   000003                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   000003                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   000003   12....       LCALL   ??B_LUX30_Delay5us?relay
+   \   000006   22           RET
+     84          
+     85          /*---------------------------------------------------------------------
+     86           功能描述: 发送应答信号
+     87           参数说明: ack - 应答信号(0:ACK 1:NAK)
+     88           函数返回: 无
+     89           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     90          void B_LUX30_SendACK(uint8 ack)
+   \                     B_LUX30_SendACK:
+     91          {
+   \   000000   74F7         MOV     A,#-0x9
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 9
+   \   000005                ; Auto size: 0
+   \   000005   E9           MOV     A,R1
+     92            if (ack&0x01)	B_LUX30_SDA0_H;		//写应答信号
+   \   000006   A2E0         MOV     C,0xE0 /* A   */.0
+   \   000008   5004         JNC     ??B_LUX30_SendACK_0
+   \   00000A   D293         SETB    0x90.3
+   \   00000C   8002         SJMP    ??B_LUX30_SendACK_1
+     93            else	B_LUX30_SDA0_L;
+   \                     ??B_LUX30_SendACK_0:
+   \   00000E   C293         CLR     0x90.3
+     94            
+     95            B_LUX30_SCL0_H;                         //拉高时钟线
+   \                     ??B_LUX30_SendACK_1:
+   \   000010   D292         SETB    0x90.2
+     96            B_LUX30_Delay5us();                     //延时
+   \   000012                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   000012   12....       LCALL   ?Subroutine8 & 0xFFFF
+     97            B_LUX30_SCL0_L;                         //拉低时钟线
+     98            B_LUX30_SDA0_H;
+   \                     ??CrossCallReturnLabel_11:
+   \   000015   D293         SETB    0x90.3
+     99            B_LUX30_Delay5us();                     //延时
+   \   000017                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   000017   12....       LCALL   ??B_LUX30_Delay5us?relay
+    100          }
+   \   00001A   80..         SJMP    ??Subroutine10_0
+   \   00001C                REQUIRE _A_P1
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ??Subroutine10_0:
+   \   000000   7F01         MOV     R7,#0x1
+   \   000002   02....       LJMP    ?BANKED_LEAVE_XDATA
+    101          
+    102          /*---------------------------------------------------------------------
+    103           功能描述: 接收应答信号
+    104           参数说明: 无
+    105           函数返回: 返回应答信号
+    106           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine1:
+   \   000000   F9           MOV     R1,A
+   \   000001                REQUIRE ??Subroutine10_0
+   \   000001                ; // Fall through to label ??Subroutine10_0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    107          uint8 B_LUX30_RecvACK()
+   \                     B_LUX30_RecvACK:
+    108          {
+   \   000000   74F7         MOV     A,#-0x9
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 9
+   \   000005                ; Auto size: 0
+    109            uint8 CY = 0x00;
+    110            B_LUX30_SDA0_H;
+   \   000005   D293         SETB    0x90.3
+    111            
+    112            B_LUX30_SDA0_I;
+   \   000007   53FEF7       ANL     0xfe,#0xf7
+    113            
+    114            B_LUX30_SCL0_H;                         //拉高时钟线
+   \   00000A   D292         SETB    0x90.2
+    115            B_LUX30_Delay5us();                     //延时
+   \   00000C                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   00000C   12....       LCALL   ??B_LUX30_Delay5us?relay
+    116            
+    117            
+    118            CY |= B_LUX30_SDA0_DAT;                 //读应答信号
+   \   00000F   E590         MOV     A,0x90
+   \   000011   FE           MOV     R6,A
+    119            
+    120            B_LUX30_Delay5us();                     //延时
+   \   000012                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   000012   12....       LCALL   ?Subroutine8 & 0xFFFF
+    121            
+    122            B_LUX30_SCL0_L;                         //拉低时钟线
+    123            
+    124            B_LUX30_SDA0_O;
+   \                     ??CrossCallReturnLabel_12:
+   \   000015   43FE08       ORL     0xfe,#0x8
+    125            
+    126            return CY;
+   \   000018   EE           MOV     A,R6
+   \   000019   A2E3         MOV     C,0xE0 /* A   */.3
+   \   00001B   E4           CLR     A
+   \   00001C   33           RLC     A
+   \   00001D   80..         SJMP    ?Subroutine1
+   \   00001F                REQUIRE _A_P1
+   \   00001F                REQUIRE P1DIR
+    127          }
+    128          
+    129          /*---------------------------------------------------------------------
+    130           功能描述: 向IIC总线发送一个字节数据
+    131           参数说明: dat - 写字节
+    132           函数返回: 无
+    133           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    134          void B_LUX30_SendByte(uint8 dat)
+   \                     B_LUX30_SendByte:
+    135          {
+   \   000000   74F7         MOV     A,#-0x9
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 9
+   \   000005                ; Auto size: 0
+   \   000005   E9           MOV     A,R1
+   \   000006   FF           MOV     R7,A
+    136            uint8 i;
+    137            
+    138            for (i=0; i<8; i++)         			//8位计数器
+   \   000007   7E08         MOV     R6,#0x8
+    139            {
+    140              if (dat&0x80)	B_LUX30_SDA0_H;
+   \                     ??B_LUX30_SendByte_0:
+   \   000009   EF           MOV     A,R7
+   \   00000A   A2E7         MOV     C,0xE0 /* A   */.7
+   \   00000C   5004         JNC     ??B_LUX30_SendByte_1
+   \   00000E   D293         SETB    0x90.3
+   \   000010   8002         SJMP    ??B_LUX30_SendByte_2
+    141              else	B_LUX30_SDA0_L;                   //送数据口
+   \                     ??B_LUX30_SendByte_1:
+   \   000012   C293         CLR     0x90.3
+    142              
+    143              B_LUX30_Delay5us();             		//延时
+   \                     ??B_LUX30_SendByte_2:
+   \   000014                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   000014   12....       LCALL   ??B_LUX30_Delay5us?relay
+    144              B_LUX30_SCL0_H;                		//拉高时钟线
+   \   000017   D292         SETB    0x90.2
+    145              B_LUX30_Delay5us();             		//延时
+   \   000019                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   000019   12....       LCALL   ?Subroutine6 & 0xFFFF
+    146              B_LUX30_SCL0_L;                		//拉低时钟线
+    147              B_LUX30_Delay5us();             		//延时
+    148              dat <<= 1;              			//移出数据的最高位
+   \                     ??CrossCallReturnLabel_7:
+   \   00001C   EF           MOV     A,R7
+   \   00001D   C3           CLR     C
+   \   00001E   33           RLC     A
+   \   00001F   FF           MOV     R7,A
+    149            }
+   \   000020   1E           DEC     R6
+   \   000021   EE           MOV     A,R6
+   \   000022   70E5         JNZ     ??B_LUX30_SendByte_0
+    150            
+    151            B_LUX30_RecvACK();
+   \   000024                ; Setup parameters for call to function B_LUX30_RecvACK
+   \   000024   12....       LCALL   ??B_LUX30_RecvACK?relay
+    152          }
+   \   000027   80..         SJMP    ??Subroutine10_0
+   \   000029                REQUIRE _A_P1
+    153          
+    154          /*---------------------------------------------------------------------
+    155           功能描述: 从IIC总线接收一个字节数据
+    156           参数说明: 无
+    157           函数返回: 接收字节
+    158           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    159          uint8 B_LUX30_RecvByte()
+   \                     B_LUX30_RecvByte:
+    160          {
+   \   000000   74F7         MOV     A,#-0x9
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 9
+   \   000005                ; Auto size: 0
+    161            uint8 i;
+    162            uint8 dat = 0;
+   \   000005   7E00         MOV     R6,#0x0
+    163            B_LUX30_SDA0_I;
+   \   000007   53FEF7       ANL     0xfe,#0xf7
+    164            
+    165            B_LUX30_SDA0_H;                         //使能内部上拉,准备读取数据,
+   \   00000A   D293         SETB    0x90.3
+    166            for (i=0; i<8; i++)         	        //8位计数器
+   \   00000C   7F08         MOV     R7,#0x8
+    167            {
+    168              dat <<= 1;
+    169              B_LUX30_SCL0_H;                       //拉高时钟线
+   \                     ??B_LUX30_RecvByte_0:
+   \   00000E   D292         SETB    0x90.2
+    170              B_LUX30_Delay5us();             	//延时
+   \   000010                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   000010   12....       LCALL   ??B_LUX30_Delay5us?relay
+    171              dat |= B_LUX30_SDA0_DAT;              //读数据               
+   \   000013   A293         MOV     C,0x90.3
+   \   000015   E4           CLR     A
+   \   000016   33           RLC     A
+   \   000017   F8           MOV     R0,A
+   \   000018   EE           MOV     A,R6
+   \   000019   33           RLC     A
+   \   00001A   48           ORL     A,R0
+   \   00001B   FE           MOV     R6,A
+    172              B_LUX30_SCL0_L;                       //拉低时钟线
+   \   00001C   C292         CLR     0x90.2
+    173              B_LUX30_Delay5us();             	//延时
+   \   00001E                ; Setup parameters for call to function B_LUX30_Delay5us
+   \   00001E   12....       LCALL   ??B_LUX30_Delay5us?relay
+    174              
+    175          	
+    176            }
+   \   000021   1F           DEC     R7
+   \   000022   EF           MOV     A,R7
+   \   000023   70E9         JNZ     ??B_LUX30_RecvByte_0
+    177            B_LUX30_SDA0_O;
+   \   000025   43FE08       ORL     0xfe,#0x8
+    178            
+    179            return dat;
+   \   000028   EE           MOV     A,R6
+   \   000029   02....       LJMP    ?Subroutine1 & 0xFFFF
+   \   00002C                REQUIRE P1DIR
+   \   00002C                REQUIRE _A_P1
+    180          }
+    181          
+    182          /*---------------------------------------------------------------------
+    183           功能描述: 写B_LUX30
+    184           参数说明: REG_Address - 寄存器地址
+    185           函数返回: 无
+    186           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    187          void B_LUX30_Multiple_Write(uint8 REG_Address, uint8* vBuf, uint8 vLen)
+   \                     B_LUX30_Multiple_Write:
+    188          {
+   \   000000   74F3         MOV     A,#-0xd
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 13
+   \   000005                ; Auto size: 0
+   \   000005   12....       LCALL   ?Subroutine4 & 0xFFFF
+    189            uint8 i = 0;
+    190             //---------------------------写程序
+    191            B_LUX30_Start();                                  //起始信号
+    192            B_LUX30_SendByte(B_LUX30_SlaveAddress+0);         //发送设备地址+读信号
+    193            B_LUX30_SendByte(REG_Address);                    //写地址
+   \                     ??CrossCallReturnLabel_2:
+   \   000008   12....       LCALL   ??B_LUX30_SendByte?relay
+    194            for (i=0; i<=vLen; i++)                           //循环写数据
+   \   00000B   75..00       MOV     ?V0 + 3,#0x0
+    195            {
+    196              B_LUX30_SendByte(vBuf[i]);                      //写数据
+   \                     ??B_LUX30_Multiple_Write_0:
+   \   00000E                ; Setup parameters for call to function B_LUX30_SendByte
+   \   00000E   12....       LCALL   ?Subroutine7 & 0xFFFF
+    197            }
+   \                     ??CrossCallReturnLabel_8:
+   \   000011   E0           MOVX    A,@DPTR
+   \   000012   F9           MOV     R1,A
+   \   000013   12....       LCALL   ??B_LUX30_SendByte?relay
+   \   000016   05..         INC     ?V0 + 3
+   \   000018   E5..         MOV     A,?V0 + 4
+   \   00001A   C3           CLR     C
+   \   00001B   95..         SUBB    A,?V0 + 3
+   \   00001D   50EF         JNC     ??B_LUX30_Multiple_Write_0
+    198            B_LUX30_Stop();                                   //停止信号
+   \   00001F                ; Setup parameters for call to function B_LUX30_Stop
+   \   00001F                REQUIRE ?Subroutine2
+   \   00001F                ; // Fall through to label ?Subroutine2
+    199            //---------------------------
+    200            
+    201          }
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine2:
+   \   000000   12....       LCALL   ??B_LUX30_Stop?relay
+   \   000003   7F05         MOV     R7,#0x5
+   \   000005   02....       LJMP    ?BANKED_LEAVE_XDATA
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine7:
+   \   000000   85....       MOV     ?V0 + 0,?V0 + 3
+   \   000003   EE           MOV     A,R6
+   \   000004   25..         ADD     A,?V0 + 0
+   \   000006   F582         MOV     DPL,A
+   \   000008   EF           MOV     A,R7
+   \   000009   3400         ADDC    A,#0x0
+   \   00000B   F583         MOV     DPH,A
+   \   00000D   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine4:
+   \   000000   89..         MOV     ?V0 + 2,R1
+   \   000002   EA           MOV     A,R2
+   \   000003   FE           MOV     R6,A
+   \   000004   EB           MOV     A,R3
+   \   000005   FF           MOV     R7,A
+   \   000006   8C..         MOV     ?V0 + 4,R4
+   \   000008                ; Setup parameters for call to function B_LUX30_Start
+   \   000008                ; Setup parameters for call to function B_LUX30_Start
+   \   000008   12....       LCALL   ?Subroutine9 & 0xFFFF
+   \                     ??CrossCallReturnLabel_14:
+   \   00000B                ; Setup parameters for call to function B_LUX30_SendByte
+   \   00000B                ; Setup parameters for call to function B_LUX30_SendByte
+   \   00000B   A9..         MOV     R1,?V0 + 2
+   \   00000D   22           RET
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine9:
+   \   000000   12....       LCALL   ??B_LUX30_Start?relay
+   \   000003                ; Setup parameters for call to function B_LUX30_SendByte
+   \   000003                ; Setup parameters for call to function B_LUX30_SendByte
+   \   000003                ; Setup parameters for call to function B_LUX30_SendByte
+   \   000003   7994         MOV     R1,#-0x6c
+   \   000005   12....       LCALL   ??B_LUX30_SendByte?relay
+   \   000008   22           RET
+    202          
+    203          /*---------------------------------------------------------------------
+    204           功能描述: 读B_LUX30
+    205           参数说明: REG_Address - 寄存器地址
+    206           函数返回: 无
+    207           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    208          void B_LUX30_Multiple_read(uint8 REG_Address, uint8* vBuf, uint8 vLen)
+   \                     B_LUX30_Multiple_read:
+    209          {
+   \   000000   74F3         MOV     A,#-0xd
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 13
+   \   000005                ; Auto size: 0
+   \   000005   12....       LCALL   ?Subroutine4 & 0xFFFF
+    210            uint8 i = 0;
+    211            //---------------------------读程序
+    212            B_LUX30_Start();                                //起始信号
+    213            B_LUX30_SendByte(B_LUX30_SlaveAddress+0);       //发送设备地址+读信号
+    214            B_LUX30_SendByte(REG_Address);                  //从0x00地址开始读取光照值
+   \                     ??CrossCallReturnLabel_3:
+   \   000008   12....       LCALL   ?Subroutine3 & 0xFFFF
+    215           
+    216            B_LUX30_Start();                                //起始信号
+    217            B_LUX30_SendByte(B_LUX30_SlaveAddress+1);       //发送设备地址+读信号
+    218            B_LUX30_delay_nms(1);                           //延时180ms
+    219            for (i=0; i<=vLen; i++)                            //连续读取4个地址数据，存储中BUF
+   \                     ??CrossCallReturnLabel_0:
+   \   00000B   75..00       MOV     ?V0 + 3,#0x0
+    220            {
+    221              vBuf[i] = B_LUX30_RecvByte();                //BUF[0]存储0x32地址中的数据
+   \                     ??B_LUX30_Multiple_read_0:
+   \   00000E                ; Setup parameters for call to function B_LUX30_RecvByte
+   \   00000E   12....       LCALL   ??B_LUX30_RecvByte?relay
+   \   000011   12....       LCALL   ?Subroutine7 & 0xFFFF
+   \                     ??CrossCallReturnLabel_9:
+   \   000014   E9           MOV     A,R1
+   \   000015   F0           MOVX    @DPTR,A
+    222              if (i == vLen)
+   \   000016   E5..         MOV     A,?V0 + 4
+   \   000018   65..         XRL     A,?V0 + 3
+   \   00001A   7004         JNZ     ??B_LUX30_Multiple_read_1
+    223              {
+    224                
+    225                B_LUX30_SendACK(1);                         //最后一个数据需要回NOACK
+   \   00001C                ; Setup parameters for call to function B_LUX30_SendACK
+   \   00001C   7901         MOV     R1,#0x1
+   \   00001E   8002         SJMP    ??B_LUX30_Multiple_read_2
+    226              }
+    227              else
+    228              {		
+    229                B_LUX30_SendACK(0);                         //回应ACK
+   \                     ??B_LUX30_Multiple_read_1:
+   \   000020                ; Setup parameters for call to function B_LUX30_SendACK
+   \   000020   7900         MOV     R1,#0x0
+   \                     ??B_LUX30_Multiple_read_2:
+   \   000022   12....       LCALL   ??B_LUX30_SendACK?relay
+    230              }
+    231            }
+   \   000025   05..         INC     ?V0 + 3
+   \   000027   E5..         MOV     A,?V0 + 4
+   \   000029   C3           CLR     C
+   \   00002A   95..         SUBB    A,?V0 + 3
+   \   00002C   50E0         JNC     ??B_LUX30_Multiple_read_0
+    232            B_LUX30_Stop();                                 //停止信号
+   \   00002E                ; Setup parameters for call to function B_LUX30_Stop
+   \   00002E   80..         SJMP    ?Subroutine2
+    233            
+    234            //---------------------------
+    235          }
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine3:
+   \   000000   12....       LCALL   ??B_LUX30_SendByte?relay
+   \   000003                ; Setup parameters for call to function B_LUX30_Start
+   \   000003                ; Setup parameters for call to function B_LUX30_Start
+   \   000003   12....       LCALL   ??B_LUX30_Start?relay
+   \   000006                ; Setup parameters for call to function B_LUX30_SendByte
+   \   000006                ; Setup parameters for call to function B_LUX30_SendByte
+   \   000006   7995         MOV     R1,#-0x6b
+   \   000008   12....       LCALL   ??B_LUX30_SendByte?relay
+   \   00000B                ; Setup parameters for call to function B_LUX30_delay_nms
+   \   00000B                ; Setup parameters for call to function B_LUX30_delay_nms
+   \   00000B   7A01         MOV     R2,#0x1
+   \   00000D   7B00         MOV     R3,#0x0
+   \   00000F   12....       LCALL   ??B_LUX30_delay_nms?relay
+   \   000012   22           RET
+    236          
+    237          /*---------------------------------------------------------------------
+    238           功能描述: 初始化光照传感器
+    239           参数说明: 无
+    240           函数返回: 无
+    241           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    242          void B_LUX30_Init()
+   \                     B_LUX30_Init:
+    243          {
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+    244            P1SEL &= ~(0x0C);		//选择IO口
+   \   000000   53F4F3       ANL     0xf4,#0xf3
+    245            
+    246            B_LUX30_SCL0_O;
+   \   000003   43FE04       ORL     0xfe,#0x4
+    247            B_LUX30_SDA0_O;
+   \   000006   43FE08       ORL     0xfe,#0x8
+    248            
+    249          }
+   \   000009   02....       LJMP    ?BRET
+   \   00000C                REQUIRE P1SEL
+   \   00000C                REQUIRE P1DIR
+    250          
+    251          /*---------------------------------------------------------------------
+    252           功能描述: 光照读取函数
+    253           参数说明: 无
+    254           函数返回: 返回光照值
+    255           ---------------------------------------------------------------------*/
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    256          uint32 B_LUX30_GetLux()
+   \                     B_LUX30_GetLux:
+    257          {  
+   \   000000   74F0         MOV     A,#-0x10
+   \   000002   12....       LCALL   ?BANKED_ENTER_XDATA
+   \   000005                ; Saved register size: 16
+   \   000005                ; Auto size: 0
+    258            uint32 val32 = 0;
+    259            fint32 temp;
+    260            uint8  i = 0;
+    261            
+    262          
+    263            //---------------------------读程序
+    264            B_LUX30_Start();                                //起始信号
+   \   000005                ; Setup parameters for call to function B_LUX30_Start
+   \   000005   12....       LCALL   ?Subroutine9 & 0xFFFF
+    265            B_LUX30_SendByte(B_LUX30_SlaveAddress+0);       //发送设备地址+读信号
+    266            B_LUX30_SendByte(0x00);                         //从0x00地址开始读取光照值
+   \                     ??CrossCallReturnLabel_15:
+   \   000008                ; Setup parameters for call to function B_LUX30_SendByte
+   \   000008   7900         MOV     R1,#0x0
+   \   00000A   12....       LCALL   ?Subroutine3 & 0xFFFF
+    267           
+    268            B_LUX30_Start();                                //起始信号
+    269            B_LUX30_SendByte(B_LUX30_SlaveAddress+1);       //发送设备地址+读信号
+    270            B_LUX30_delay_nms(1);                           //延时180ms
+    271            for (i=0; i<=3; i++)                            //连续读取4个地址数据，存储中BUF
+   \                     ??CrossCallReturnLabel_1:
+   \   00000D   7E00         MOV     R6,#0x0
+    272            {
+    273              m_BUF[i] = B_LUX30_RecvByte();                //BUF[0]存储0x32地址中的数据
+   \                     ??B_LUX30_GetLux_0:
+   \   00000F                ; Setup parameters for call to function B_LUX30_RecvByte
+   \   00000F   12....       LCALL   ??B_LUX30_RecvByte?relay
+   \   000012   8E..         MOV     ?V0 + 0,R6
+   \   000014   74..         MOV     A,#m_BUF & 0xff
+   \   000016   25..         ADD     A,?V0 + 0
+   \   000018   F582         MOV     DPL,A
+   \   00001A   74..         MOV     A,#(m_BUF >> 8) & 0xff
+   \   00001C   3400         ADDC    A,#0x0
+   \   00001E   F583         MOV     DPH,A
+   \   000020   E9           MOV     A,R1
+   \   000021   F0           MOVX    @DPTR,A
+    274              if (i == 3)
+   \   000022   7403         MOV     A,#0x3
+   \   000024   6E           XRL     A,R6
+   \   000025   7004         JNZ     ??B_LUX30_GetLux_1
+    275              {
+    276                
+    277                B_LUX30_SendACK(1);                         //最后一个数据需要回NOACK
+   \   000027                ; Setup parameters for call to function B_LUX30_SendACK
+   \   000027   7901         MOV     R1,#0x1
+   \   000029   8002         SJMP    ??B_LUX30_GetLux_2
+    278              }
+    279              else
+    280              {		
+    281                B_LUX30_SendACK(0);                         //回应ACK
+   \                     ??B_LUX30_GetLux_1:
+   \   00002B                ; Setup parameters for call to function B_LUX30_SendACK
+   \   00002B   7900         MOV     R1,#0x0
+   \                     ??B_LUX30_GetLux_2:
+   \   00002D   12....       LCALL   ??B_LUX30_SendACK?relay
+    282              }
+    283            }
+   \   000030   0E           INC     R6
+   \   000031   EE           MOV     A,R6
+   \   000032   C3           CLR     C
+   \   000033   9404         SUBB    A,#0x4
+   \   000035   40D8         JC      ??B_LUX30_GetLux_0
+    284            B_LUX30_Stop();                                 //停止信号
+   \   000037                ; Setup parameters for call to function B_LUX30_Stop
+   \   000037   12....       LCALL   ??B_LUX30_Stop?relay
+    285            
+    286            //---------------------------
+    287            
+    288            val32   = m_BUF[3];
+    289            val32 <<= 8;
+    290            val32  |= m_BUF[2];
+    291            val32 <<= 8;
+    292            val32  |= m_BUF[1];
+    293            val32 <<= 8;
+    294            val32  |= m_BUF[0];
+    295            
+    296            temp = (fint32)val32*1.4;			   //半球透明度矫正值*1.4
+   \   00003A   90....       MOV     DPTR,#m_BUF + 3
+   \   00003D   E0           MOVX    A,@DPTR
+   \   00003E   F5..         MOV     ?V0 + 0,A
+   \   000040   E4           CLR     A
+   \   000041   F5..         MOV     ?V0 + 1,A
+   \   000043   F5..         MOV     ?V0 + 2,A
+   \   000045   F5..         MOV     ?V0 + 3,A
+   \   000047   7408         MOV     A,#0x8
+   \   000049   78..         MOV     R0,#?V0 + 0
+   \   00004B   12....       LCALL   ?L_SHL
+   \   00004E   90....       MOV     DPTR,#m_BUF + 2
+   \   000051   E0           MOVX    A,@DPTR
+   \   000052   F5..         MOV     ?V0 + 4,A
+   \   000054   E4           CLR     A
+   \   000055   F5..         MOV     ?V0 + 5,A
+   \   000057   F5..         MOV     ?V0 + 6,A
+   \   000059   F5..         MOV     ?V0 + 7,A
+   \   00005B   78..         MOV     R0,#?V0 + 0
+   \   00005D   79..         MOV     R1,#?V0 + 4
+   \   00005F   12....       LCALL   ?L_IOR
+   \   000062   7408         MOV     A,#0x8
+   \   000064   78..         MOV     R0,#?V0 + 0
+   \   000066   12....       LCALL   ?L_SHL
+   \   000069   90....       MOV     DPTR,#m_BUF + 1
+   \   00006C   E0           MOVX    A,@DPTR
+   \   00006D   F5..         MOV     ?V0 + 4,A
+   \   00006F   78..         MOV     R0,#?V0 + 0
+   \   000071   79..         MOV     R1,#?V0 + 4
+   \   000073   12....       LCALL   ?L_IOR
+   \   000076   7408         MOV     A,#0x8
+   \   000078   78..         MOV     R0,#?V0 + 0
+   \   00007A   12....       LCALL   ?L_SHL
+   \   00007D   90....       MOV     DPTR,#m_BUF
+   \   000080   E0           MOVX    A,@DPTR
+   \   000081   F5..         MOV     ?V0 + 4,A
+   \   000083   78..         MOV     R0,#?V0 + 0
+   \   000085   79..         MOV     R1,#?V0 + 4
+   \   000087   12....       LCALL   ?L_IOR
+   \   00008A   78..         MOV     R0,#?V0 + 0
+   \   00008C   12....       LCALL   ?UL_TO_FLT
+   \   00008F   90....       MOV     DPTR,#__Constant_3fb33333
+   \   000092   78..         MOV     R0,#?V0 + 4
+   \   000094   12....       LCALL   ?L_MOV_X
+   \   000097   78..         MOV     R0,#?V0 + 0
+   \   000099   79..         MOV     R1,#?V0 + 4
+   \   00009B   12....       LCALL   ?FLT_MUL
+    297            m_lightlux = (uint32)temp;
+   \   00009E   78..         MOV     R0,#?V0 + 0
+   \   0000A0   12....       LCALL   ?FLT_TO_UL
+   \   0000A3   90....       MOV     DPTR,#m_lightlux
+   \   0000A6   78..         MOV     R0,#?V0 + 0
+   \   0000A8   12....       LCALL   ?L_MOV_TO_X
+    298            return (uint32)temp;
+   \   0000AB   AA..         MOV     R2,?V0 + 0
+   \   0000AD   AB..         MOV     R3,?V0 + 1
+   \   0000AF   AC..         MOV     R4,?V0 + 2
+   \   0000B1   AD..         MOV     R5,?V0 + 3
+   \   0000B3   7F08         MOV     R7,#0x8
+   \   0000B5   02....       LJMP    ?BANKED_LEAVE_XDATA
+    299          } 
+
+   \                                 In  segment XDATA_ROM_C, align 1
+   \                     __Constant_3fb33333:
+   \   000000   3333B33F     DD 3FB33333H
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_delay_nms?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_delay_nms
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_Delay5us?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_Delay5us
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_Delay5ms?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_Delay5ms
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_Start?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_Start
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_Stop?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_Stop
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_SendACK?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_SendACK
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_RecvACK?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_RecvACK
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_SendByte?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_SendByte
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_RecvByte?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_RecvByte
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_Multiple_Write?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_Multiple_Write
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_Multiple_read?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_Multiple_read
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_Init?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_Init
+
+   \                                 In  segment BANK_RELAYS, align 1
+   \                     ??B_LUX30_GetLux?relay:
+   \   000000   12....       LCALL   ?BDISPATCH
+   \   000003   ......       DC24    B_LUX30_GetLux
+    300          
+
+   Maximum stack usage in bytes:
+
+     Function               ISTACK PSTACK XSTACK
+     --------               ------ ------ ------
+     B_LUX30_Delay5ms           0      0      0
+     B_LUX30_Delay5us           0      0      9
+     B_LUX30_GetLux             1      0     16
+       -> B_LUX30_Start         0      0     32
+       -> B_LUX30_SendByte      0      0     32
+       -> B_LUX30_SendByte      0      0     32
+       -> B_LUX30_Start         0      0     32
+       -> B_LUX30_SendByte      0      0     32
+       -> B_LUX30_delay_nms     0      0     32
+       -> B_LUX30_RecvByte      0      0     32
+       -> B_LUX30_SendACK       0      0     32
+       -> B_LUX30_SendACK       0      0     32
+       -> B_LUX30_Stop          0      0     32
+     B_LUX30_Init               0      0      0
+     B_LUX30_Multiple_Write     0      0     13
+       -> B_LUX30_Start         0      0     26
+       -> B_LUX30_SendByte      0      0     26
+       -> B_LUX30_SendByte      0      0     26
+       -> B_LUX30_SendByte      0      0     26
+       -> B_LUX30_Stop          0      0     26
+     B_LUX30_Multiple_read      1      0     13
+       -> B_LUX30_Start         0      0     26
+       -> B_LUX30_SendByte      0      0     26
+       -> B_LUX30_SendByte      0      0     26
+       -> B_LUX30_Start         0      0     26
+       -> B_LUX30_SendByte      0      0     26
+       -> B_LUX30_delay_nms     0      0     26
+       -> B_LUX30_RecvByte      0      0     26
+       -> B_LUX30_SendACK       0      0     26
+       -> B_LUX30_SendACK       0      0     26
+       -> B_LUX30_Stop          0      0     26
+     B_LUX30_RecvACK            0      0     18
+       -> B_LUX30_Delay5us      0      0     18
+       -> B_LUX30_Delay5us      0      0     18
+     B_LUX30_RecvByte           0      0     25
+       -> B_LUX30_Delay5us      0      0     18
+       -> B_LUX30_Delay5us      0      0     18
+     B_LUX30_SendACK            0      0     25
+       -> B_LUX30_Delay5us      0      0     18
+       -> B_LUX30_Delay5us      0      0     18
+     B_LUX30_SendByte           0      0     25
+       -> B_LUX30_Delay5us      0      0     18
+       -> B_LUX30_Delay5us      0      0     18
+       -> B_LUX30_Delay5us      0      0     18
+       -> B_LUX30_RecvACK       0      0     18
+     B_LUX30_Start              2      0     16
+       -> B_LUX30_Delay5us      4      0      0
+       -> B_LUX30_Delay5us      4      0      0
+     B_LUX30_Stop               2      0     16
+       -> B_LUX30_Delay5us      4      0      0
+       -> B_LUX30_Delay5us      4      0      0
+       -> B_LUX30_Delay5us      4      0      0
+       -> B_LUX30_delay_nms     4      0      0
+     B_LUX30_delay_nms          0      0     16
+
+
+   Segment part sizes:
+
+     Function/Label                 Bytes
+     --------------                 -----
+     _A_P1                             1
+     P1SEL                             1
+     P1DIR                             1
+     m_BUF                           129
+     m_lightlux                        4
+     B_LUX30_delay_nms                24
+     B_LUX30_Delay5us                 12
+     ?Subroutine5                     15
+     B_LUX30_Delay5ms                 12
+     B_LUX30_Start                    16
+     ?Subroutine0                      7
+     ?Subroutine8                      6
+     B_LUX30_Stop                     25
+     ?Subroutine6                      7
+     B_LUX30_SendACK                  28
+     ??Subroutine10_0                  5
+     ?Subroutine1                      1
+     B_LUX30_RecvACK                  31
+     B_LUX30_SendByte                 41
+     B_LUX30_RecvByte                 44
+     B_LUX30_Multiple_Write           31
+     ?Subroutine2                      8
+     ?Subroutine7                     14
+     ?Subroutine4                     14
+     ?Subroutine9                      9
+     B_LUX30_Multiple_read            48
+     ?Subroutine3                     19
+     B_LUX30_Init                     12
+     B_LUX30_GetLux                  184
+     __Constant_3fb33333               4
+     ??B_LUX30_delay_nms?relay         6
+     ??B_LUX30_Delay5us?relay          6
+     ??B_LUX30_Delay5ms?relay          6
+     ??B_LUX30_Start?relay             6
+     ??B_LUX30_Stop?relay              6
+     ??B_LUX30_SendACK?relay           6
+     ??B_LUX30_RecvACK?relay           6
+     ??B_LUX30_SendByte?relay          6
+     ??B_LUX30_RecvByte?relay          6
+     ??B_LUX30_Multiple_Write?relay    6
+     ??B_LUX30_Multiple_read?relay     6
+     ??B_LUX30_Init?relay              6
+     ??B_LUX30_GetLux?relay            6
+
+ 
+ 613 bytes in segment BANKED_CODE
+  78 bytes in segment BANK_RELAYS
+   3 bytes in segment SFR_AN
+   4 bytes in segment XDATA_ROM_C
+ 133 bytes in segment XDATA_Z
+ 
+ 691 bytes of CODE  memory
+   0 bytes of CONST memory (+ 4 bytes shared)
+   0 bytes of DATA  memory (+ 3 bytes shared)
+ 133 bytes of XDATA memory
+
+Errors: none
+Warnings: none

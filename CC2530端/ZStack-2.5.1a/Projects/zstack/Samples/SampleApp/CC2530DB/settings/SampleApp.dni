@@ -1,0 +1,41 @@
+[DebugChecksum]
+Checksum=1129061775
+[DisAssemblyWindow]
+NumStates=_ 1
+State 1=_ 1
+[InstructionProfiling]
+Enabled=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$}.494.3@1" 0 0 0 0 "" 0 ""
+Count=1
+[ChipconEmu]
+Stop timers on halt=1
+Leave target running=1
+[Aliases]
+A0=_ "F:\dongle例程\dongle usb交互\ZStack-2.5.1a\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+A1=_ "I:\zigbee\资料\淘宝所用资料-V4.3\学习例程以及开发环境安装\第五章.组网实验\实验7.温湿度传感器DHT11(带蜂鸣器报警)\ZStack-2.5.1a\Components\osal\common\OSAL_Timers.c" ""
+A2=_ "I:\zigbee\资料\淘宝所用资料-V4.3\学习例程以及开发环境安装\第五章.组网实验\实验7.温湿度传感器DHT11(带蜂鸣器报警)\ZStack-2.5.1a\Components\zmac\f8w\zmac.c" ""
+A3=_ "I:\zigbee\资料\淘宝所用资料-V4.3\学习例程以及开发环境安装\第五章.组网实验\实验7.温湿度传感器DHT11(带蜂鸣器报警)\ZStack-2.5.1a\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+A4=_ "I:\zigbee\资料\淘宝所用资料-V4.4（TB）\学习例程以及开发环境安装\第五章.组网实验\实验7.温湿度传感器DHT11(带蜂鸣器报警)\ZStack-2.5.1a\Components\zmac\f8w\zmac.c" ""
+A5=_ "I:\zigbee\资料\淘宝所用资料-V4.4（TB）\学习例程以及开发环境安装\第五章.组网实验\实验7.温湿度传感器DHT11(带蜂鸣器报警)\ZStack-2.5.1a\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+Count=6
+SuppressDialog=0

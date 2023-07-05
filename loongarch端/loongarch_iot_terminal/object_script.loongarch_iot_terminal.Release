@@ -1,0 +1,11 @@
+release/basealarm.o
+release/basechart.o
+release/basetable.o
+release/exportapi.o
+release/main.o
+release/mainwindow.o
+release/basedb.o
+release/sensordata.o
+release/sensordb.o
+release/qrc_picture.o
+release/moc_mainwindow.o

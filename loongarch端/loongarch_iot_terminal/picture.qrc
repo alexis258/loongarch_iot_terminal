@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>picture/app.png</file>
+        <file>picture/terminal.png</file>
+        <file>picture/coor.png</file>
+        <file>picture/end.png</file>
+        <file>picture/router.png</file>
+    </qresource>
+</RCC>

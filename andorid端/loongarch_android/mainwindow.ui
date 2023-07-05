@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>1200</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>17</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{border-image:url(:/background.jpg)}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image:url(:/background.jpg);</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(124, 188, 231);</string>
+         </property>
+         <property name="text">
+          <string>基于龙芯派的物联网仓储系统</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="PB1">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>248</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>372</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image:url(:/but1.png);
+image-position: left;
+text-align:right;
+padding-left:30px;
+padding-right:30px;
+background-color:rgb(199,237,204);</string>
+          </property>
+          <property name="text">
+           <string>节点概览</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="PB2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>248</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image:url(:/but2.png);
+image-position: left;
+text-align:right;
+padding-left:30px;
+padding-right:30px;
+background-color:rgb(199,237,204);
+</string>
+          </property>
+          <property name="text">
+           <string>传感数据</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="PB3">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>248</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image:url(:/but3.png);
+image-position: left;
+text-align:right;
+padding-left:30px;
+padding-right:30px;
+background-color:rgb(199,237,204);</string>
+          </property>
+          <property name="text">
+           <string>节点网络</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="PB4">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>248</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image:url(:/but4.png);
+image-position: left;
+text-align:right;
+padding-left:30px;
+padding-right:30px;
+background-color:rgb(199,237,204);</string>
+          </property>
+          <property name="text">
+           <string>电量信息</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QPushButton" name="PB5">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>248</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image:url(:/but5.png);
+image-position: left;
+text-align:right;
+padding-left:30px;
+padding-right:30px;
+background-color:rgb(199,237,204);</string>
+          </property>
+          <property name="text">
+           <string>报警信息</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="PB6">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>248</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image:url(:/but6.png);
+image-position: left;
+text-align:right;
+padding-left:30px;
+padding-right:30px;
+background-color:rgb(199,237,204);</string>
+          </property>
+          <property name="text">
+           <string>网络连接</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
