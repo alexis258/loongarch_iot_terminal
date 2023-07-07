@@ -2118,7 +2118,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(0);
         nodeChooseCB1->setCurrentIndex(0);
         nodeChooseCB2->setCurrentIndex(0);
         indexCB1->setCurrentIndex(0);
@@ -2154,30 +2154,31 @@ public:
         nodeChooseCB1->setItemText(3, QCoreApplication::translate("MainWindow", "\345\233\233\345\217\267\350\212\202\347\202\271", nullptr));
 
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "\347\241\256\350\256\244", nullptr));
-        groupBox_4->setTitle(QCoreApplication::translate("MainWindow", "\350\256\276\347\275\256\347\225\214\351\235\242", nullptr));
-        label_31->setText(QCoreApplication::translate("MainWindow", "\351\200\211\346\213\251\350\212\202\347\202\271\357\274\232", nullptr));
+        groupBox_4->setTitle(QCoreApplication::translate("MainWindow", "\346\212\245\350\255\246\346\227\245\345\277\227\350\256\276\347\275\256\347\225\214\351\235\242", nullptr));
+        label_31->setText(QCoreApplication::translate("MainWindow", "\351\200\211\346\213\251\347\233\256\346\240\207\350\212\202\347\202\271\357\274\232", nullptr));
         nodeChooseCB2->setItemText(0, QCoreApplication::translate("MainWindow", "\344\270\200\345\217\267\350\212\202\347\202\271", nullptr));
         nodeChooseCB2->setItemText(1, QCoreApplication::translate("MainWindow", "\344\272\214\345\217\267\350\212\202\347\202\271", nullptr));
         nodeChooseCB2->setItemText(2, QCoreApplication::translate("MainWindow", "\344\270\211\345\217\267\350\212\202\347\202\271", nullptr));
         nodeChooseCB2->setItemText(3, QCoreApplication::translate("MainWindow", "\345\233\233\345\217\267\350\212\202\347\202\271", nullptr));
         nodeChooseCB2->setItemText(4, QCoreApplication::translate("MainWindow", "\344\272\224\345\217\267\350\212\202\347\202\271", nullptr));
 
-        label_33->setText(QCoreApplication::translate("MainWindow", "\346\270\251\345\272\246\357\274\232", nullptr));
+        label_33->setText(QCoreApplication::translate("MainWindow", "\346\270\251\345\272\246\351\230\210\345\200\274\357\274\232", nullptr));
         L1->setText(QCoreApplication::translate("MainWindow", "10", nullptr));
         label_39->setText(QCoreApplication::translate("MainWindow", "\357\275\236", nullptr));
         L2->setText(QCoreApplication::translate("MainWindow", "40", nullptr));
-        label_40->setText(QCoreApplication::translate("MainWindow", "K", nullptr));
-        label_34->setText(QCoreApplication::translate("MainWindow", "\346\271\277\345\272\246\357\274\232", nullptr));
+        label_40->setText(QCoreApplication::translate("MainWindow", "\342\204\203", nullptr));
+        label_34->setText(QCoreApplication::translate("MainWindow", "\346\271\277\345\272\246\351\230\210\345\200\274\357\274\232", nullptr));
         L3->setText(QCoreApplication::translate("MainWindow", "30", nullptr));
         label_41->setText(QCoreApplication::translate("MainWindow", "\357\275\236", nullptr));
         L4->setText(QCoreApplication::translate("MainWindow", "70", nullptr));
         label_42->setText(QCoreApplication::translate("MainWindow", "%RH", nullptr));
-        label_35->setText(QCoreApplication::translate("MainWindow", "\345\205\211\347\205\247\357\274\232", nullptr));
+        label_35->setText(QCoreApplication::translate("MainWindow", "\345\205\211\347\205\247\351\230\210\345\200\274\357\274\232", nullptr));
         L5->setText(QCoreApplication::translate("MainWindow", "100", nullptr));
         label_43->setText(QCoreApplication::translate("MainWindow", "\357\275\236", nullptr));
         L6->setText(QCoreApplication::translate("MainWindow", "2000", nullptr));
         label_44->setText(QCoreApplication::translate("MainWindow", "LUX", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "\346\212\245\350\255\246\345\217\221\351\200\201\351\227\264\351\232\224\357\274\232", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "\346\212\245\350\255\246\350\256\260\345\275\225\351\227\264\351\232\224\357\274\232", nullptr));
+        lineEdit->setText(QCoreApplication::translate("MainWindow", "5", nullptr));
         label_32->setText(QCoreApplication::translate("MainWindow", "s", nullptr));
         setValuePB->setText(QCoreApplication::translate("MainWindow", "\347\241\256\350\256\244\344\277\256\346\224\271", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "\350\212\202\347\202\271\346\216\247\345\210\266", nullptr));
